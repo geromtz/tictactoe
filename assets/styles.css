@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./img/bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.box {
+    background-color: transparent;
+}
+
+.winning-cell {
+    background-color: rgba(0, 245, 0, 0.247);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select_game {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #22222273;
+    width: 80%;
+    max-width: 400px;
+    height: 45%;
+    border-radius: 8px;
+}
+
+.select_game h2 {
+    font-size: 4.0rem;
+    font-family: 'VT323', monospace;
+    margin-bottom: 40px;
+}
+
+.select_game button{
+    font-family: 'VT323', monospace;
+    font-size: 3.0rem;
+    width: 230px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #fffdfd;
+}
+
+.title_select__game {
+    font-size: 3rem;
+    font-family: 'VT323', monospace;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.title_game {
+    font-size: 5.0rem;
+    font-family: 'VT323', monospace;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+#gameContainer {
+    width: 95%;
+    max-width: 500px;
+    height: 285px;
+    min-height: 285px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#gameContainer button { 
+    width: 100%;
+    height: 119px;
+    cursor: pointer;
+    font-size: 9rem;
+}
+
+#gameContainer .box1, .box2 , .box3 {
+    margin-top: 1px;
+}
+
+
+
+.box1, .box3, .box7, .box9 {
+    border: none;  
+}
+
+.box2 {
+    border-top: none;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.box4 {
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+}
+
+.box5 {
+    border: 1px solid;
+}
+
+.box6 {
+    border-right: none;
+    border-left: none;
+}
+
+.box8 {
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid;
+}
+
+#scores {
+    margin-top: 90px;
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    height: 80px;
+    justify-content: space-around;
+}
+
+#scores div {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+    font-size: 2.9rem;
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+}
+
+#scores div span {
+    display: block;
+}
+
+.you_score {
+    background-color: rgb(8, 179, 247);
+}
+
+.ties {
+    background-color: rgb(219, 255, 57);
+}
+
+.cpu_score {
+    background-color: rgb(255, 15, 15);
+}
+
+#statusGame {
+    font-size: 3rem;
+    font-family: 'VT323', monospace;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.selectOption {
+    width: 100%;
+    height: 50px;
+}
+
+.selectOption button {
+    width: 135px;
+    height: 50px;
+    border: none;
+    background-color: rgba(87, 88, 88, 0.308);
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+    font-size: 2.4rem;
+}
+
+.autor {
+    text-decoration: none;
+    color: #000;
+    left: calc(50% - 130px);
+    position: absolute;
+    bottom: 5px;
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+}

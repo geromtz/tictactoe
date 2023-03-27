@@ -21,7 +21,7 @@ CURRENT_PLAYER_TURN = () => `Player '${currentPlayer}' turn`
 
 // Variables
 let gameActive = true,
-circleOrX = ["X", "0"];
+circleOrX = ["X", "O"];
 currentPlayer = circleOrX[Math.floor(Math.random() * 2)]
 
 // Functions

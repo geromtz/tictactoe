@@ -53,7 +53,7 @@ function handleCellClick(clickedEvent) {
         if(gameActive) {
             setTimeout(() => {
                 handleCPUMove();
-            }, 300);
+            }, 200);
         }
     }
 }

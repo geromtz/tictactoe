@@ -16,16 +16,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('./img/bg.jpg');
-    background-repeat: no-repeat;
+    background-color: #000000;
 }
 
 .box {
-    background-color: transparent;
+    color: #fff;
+    background-color: #646464;
 }
 
 .winning-cell {
-    background-color: rgba(0, 245, 0, 0.247);
+    background-color: rgba(78, 233, 78, 0.637);
+    color: #fefffe;
 }
 
 main {
@@ -46,7 +47,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #22222273;
+    background-color: #e7e7e773;
     width: 80%;
     max-width: 400px;
     height: 45%;
@@ -54,6 +55,7 @@ main {
 }
 
 .select_game h2 {
+    color: #fff;
     font-size: 4.0rem;
     font-family: 'VT323', monospace;
     margin-bottom: 40px;
@@ -73,15 +75,26 @@ main {
     font-size: 3rem;
     font-family: 'VT323', monospace;
     margin-bottom: 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .title_game {
     font-size: 5.0rem;
     font-family: 'VT323', monospace;
     margin-bottom: 20px;
-    color: #000000;
+    color: #ffffff;
+    animation: top 1s;
 }
+
+@keyframes top {
+    0% {
+        margin-bottom: -100px;
+    }
+    100% {
+        margin-bottom: 20px;
+    }
+}
+
 
 #gameContainer {
     width: 95%;
@@ -93,48 +106,18 @@ main {
 }
 
 #gameContainer button { 
-    width: 100%;
+    width: 99%;
     height: 119px;
     cursor: pointer;
     font-size: 9rem;
+    border: none;
+    margin: 1px;
 }
 
 #gameContainer .box1, .box2 , .box3 {
     margin-top: 1px;
 }
 
-
-
-.box1, .box3, .box7, .box9 {
-    border: none;  
-}
-
-.box2 {
-    border-top: none;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-}
-
-.box4 {
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid;
-}
-
-.box5 {
-    border: 1px solid;
-}
-
-.box6 {
-    border-right: none;
-    border-left: none;
-}
-
-.box8 {
-    border-top: none;
-    border-bottom: none;
-    border-right: 1px solid;
-}
 
 #scores {
     margin-top: 90px;
@@ -189,7 +172,7 @@ main {
     width: 135px;
     height: 50px;
     border: none;
-    background-color: rgba(87, 88, 88, 0.308);
+    background-color: rgba(255, 255, 255, 0.719);
     margin: 10px;
     border-radius: 5px;
     font-family: 'VT323', monospace;
@@ -198,7 +181,7 @@ main {
 
 .autor {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     left: calc(50% - 130px);
     position: absolute;
     bottom: 5px;
